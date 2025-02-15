@@ -7,6 +7,7 @@
 html,
 body {
   height: 100%;
+  background-color: #800080;
 }
 
 #soundboard-container #audio-container {
@@ -28,8 +29,8 @@ body {
   border-radius: 5px;
 }
 #soundboard-container #button-container .fart-button {
-  height: 50%;
-  width: 50%;
+  /* height: 50%; */
+  /* width: 50%; */
   color: #fefefe;
   padding: 1rem;
   align-self: center;
@@ -47,3 +48,81 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background: #25a25a;
 }
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@font-face {
+  font-family: Stellar-light;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/452325/Stellar-light.otf);
+}
+@font-face {
+  font-family: Stellar-regular;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/452325/Stellar-Regular.otf);
+}
+body {
+  font-family: "Stellar-light", "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+section.stage {
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  background: purple;
+  position: relative;
+  overflow: hidden;
+}
+section.stage #scene {
+  width: 100%;
+  max-height: 90%;
+  margin: auto;
+}
+section.stage #scene #text {
+  filter: url(#blur);
+  font-size: 80px;
+  font-family: "Stellar-Light";
+}
+section.stage #scene #bum {
+  fill: none;
+  stroke: #DD9799;
+  stroke-width: 14;
+  stroke-miterlimit: 30;
+}
+section.stage #scene #fart {
+  filter: url(#blur7);
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+}
+
+footer {
+  display: flex;
+  height: 10vh;
+  text-align: center;
+  font-weight: 700;
+  color: black;
+}
+footer span {
+  margin: auto;
+  flex: 9;
+}
+footer a {
+  text-decoration: none;
+  color: purple;
+}
+footer #logo {
+  margin: auto;
+  flex: 1;
+}
+footer #logo svg {
+  height: 8vh;
+}
+
+
+
+

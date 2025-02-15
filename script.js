@@ -118,3 +118,27 @@ class Soundboard extends React.Component {
 ReactDOM.render( /*#__PURE__*/
 React.createElement(Soundboard, null),
 document.getElementById('fart-soundboard-container'));
+
+
+
+
+
+// let $text = $('#text').children(),
+// $bum = $('#bum').children(),
+// $fart = $('#fart').children();
+
+// var clearTL = new TimelineLite().
+// set([$fart], { drawSVG: '0%', autoAlpha: 0 });
+
+// var animationTL = new TimelineMax({}).
+// staggerFrom($text, 2, { autoAlpha: 0, ease: Power4.easeIn }).
+// to($bum, 1, { rotation: 15, transformOrigin: '50% 50%', scale: 1.2, ease: Back.easeIn, repeat: 1, yoyo: true })
+// // .staggerTo($bum, 0.5, { drawSVG: '100%', autoAlpha: 1, ease: Power4.easeIn  }, 0.3)
+// .staggerTo($fart, 5, { drawSVG: '100%', autoAlpha: 1, ease: Power4.easeIn, scale: 1.2, transformOrigin: '0% 50%' }, 0.3, '-=1.5').
+// to($fart, 3, { autoAlpha: 0.5, scale: 0.7, y: '-=100', ease: Power4.easeOut, transformOrigin: '50% 100%' }, '+=2');
+
+// var mainTL = new TimelineLite().
+// add(clearTL).
+// add(animationTL);
+
+// ScrubGSAPTimeline(mainTL);
